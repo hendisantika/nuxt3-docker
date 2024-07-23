@@ -1,0 +1,12 @@
+services:
+  app:
+    build:
+      target: deploy
+    ports:
+      - 3000:3000
+
+  app-ssg:
+    build:
+      target: deploy-ssg
+    ports:
+      - 8000:80
